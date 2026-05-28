@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
   <title>Redirecting...</title>
   <style>
     body {
@@ -21,16 +24,15 @@
 <body>
   <p>Redirecting...</p>
   <script>
-  const links = [
-    "https://instagram.com/desolated.muse",
-    "https://github.com/dipeshrayg",
-    "https://dev.to/dipeshrayg",
-    "https://coderlegion.com/user/dipeshrayg"
-  ];
+    const links = [
+      "https://instagram.com/desolated.muse",
+      "https://github.com/dipeshrayg",
+      "https://dev.to/dipeshrayg",
+      "https://coderlegion.com/user/dipeshrayg"
+    ];
 
-  const randomIndex = Math.floor(Math.random() * links.length);
-
-  window.location.replace(links[randomIndex]);
-</script>
+    const randomIndex = Math.floor(Math.random() * links.length);
+    window.location.replace(links[randomIndex] + "?t=" + Date.now());
+  </script>
 </body>
 </html>
